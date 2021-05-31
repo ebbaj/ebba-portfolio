@@ -22,7 +22,7 @@ window.onload = () => {
     box.appendChild(img);
 
     if (project.image.src === "") {
-      img.src = "images/default.jpg";
+      img.src = "./images/default.png";
       img.alt = "Default image.";
     }
 
