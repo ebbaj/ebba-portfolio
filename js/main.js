@@ -5,6 +5,7 @@ const projectGrid = document.getElementById("project-grid");
 window.onload = () => {
   projects.forEach((project) => {
     const box = document.createElement("div");
+    const imgBox = document.createElement("div");
     const img = document.createElement("img");
     const boxContent = document.createElement("div");
     const boxTitle = document.createElement("h3");
@@ -16,10 +17,12 @@ window.onload = () => {
     box.className = "box";
     boxContent.className = "box-content";
     boxTitle.className = "box-title";
+    imgBox.className = "img-box";
 
     img.src = project.image.src;
     img.alt = project.image.alt;
-    box.appendChild(img);
+    imgBox.appendChild(img);
+    box.appendChild(imgBox);
 
     if (project.image.src === "") {
       img.src = "./images/default.png";

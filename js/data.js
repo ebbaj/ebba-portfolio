@@ -3,24 +3,23 @@ export const projects = [
     id: 1,
     name: "Movie Watchlist",
     image: {
-      src: "./images/movie-watchlist3.png",
+      src: "./images/movie-watchlist.png",
       alt: " ",
     },
     description: "Create your own movie watchlist. Built with React.",
     link: "Go to page",
     url: "https://ebbaj.github.io/movie-watchlist/",
   },
-
   {
     id: 2,
-    name: "The Perfect Night",
+    name: "Pomodoro clock",
     image: {
-      src: "./images/the-perfect-night2.png",
-      alt: "Image of bomb",
+      src: "./images/pomodoro.png",
+      alt: "Blue color",
     },
-    description: "Find the perfect cocktail or play Pass the Bomb.",
+    description: "Get productive with this pomodoro clock. Built with React.",
     link: "Go to page",
-    url: "https://augustthorell.github.io/The-Perfect-Night/",
+    url: "https://ebbaj.github.io/pomodoro-timer/",
   },
   {
     id: 3,
@@ -34,12 +33,11 @@ export const projects = [
     link: "Go to page",
     url: "https://ebbaj.github.io/a-frame-foggy-forest/",
   },
-
   {
     id: 4,
     name: "Settr",
     image: {
-      src: "./images/settr.jpeg",
+      src: "./images/settr.png",
       alt: "Settr logo",
     },
     description: "Hyper Island student project in collaboration with Settr.",
@@ -48,14 +46,14 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Pomodoro clock",
+    name: "The Perfect Night",
     image: {
-      src: "",
-      alt: "Blue color",
+      src: "./images/the-perfect-night.png",
+      alt: "Image of bomb",
     },
-    description: "Get productive with this pomodoro clock. Built with React.",
+    description: "Find the perfect cocktail or play Pass the Bomb.",
     link: "Go to page",
-    url: "https://ebbaj.github.io/pomodoro-timer/",
+    url: "https://augustthorell.github.io/The-Perfect-Night/",
   },
   {
     id: 6,
@@ -76,8 +74,7 @@ export const projects = [
       src: "./images/rps.png",
       alt: " ",
     },
-    description:
-      "Play against the computer in a simple game of Rock Paper Scissors.",
+    description: "Play a simple game of Rock Paper Scissors.",
     link: "Go to page",
     url: "https://ebbaj.github.io/rock-paper-scissors/",
   },

@@ -182,6 +182,8 @@ body {
   display: grid;
   margin: 0 auto;
   margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-column-gap: 1.3rem;
   grid-row-gap: 0.3rem;
@@ -198,6 +200,7 @@ body {
   overflow: hidden;
   transition: transform 0.2s;
   box-shadow: var(--shadow);
+  /*  height: 25rem; */
 }
 
 .box:hover {
@@ -205,9 +208,14 @@ body {
 }
 
 /*Old box styling*/
-.box img {
+.img-box {
   width: 100%;
-  height: 60%;
+  height: 210px;
+}
+
+.box img {
+  max-width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -235,7 +243,7 @@ body {
 }
 
 .box-content p {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   letter-spacing: 0;
 }
 
@@ -246,7 +254,7 @@ body {
 #about h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 4rem;
   padding: 1rem 0 0 2rem;
 }
 
@@ -255,7 +263,7 @@ body {
   grid-template-columns: 2rem 1fr 1fr 2rem;
   grid-template-rows: 1fr 1fr;
   height: 80%;
-  align-items: center;
+  align-items: start;
 }
 
 .about-wrapper h3 {
@@ -281,7 +289,7 @@ body {
 
 .values {
   grid-column: 3/4;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 .skills {
@@ -291,15 +299,15 @@ body {
 
 .interests {
   grid-column: 3/4;
-  grid-row: 1/2;
+  grid-row: 2/3;
 }
 
-.values-list {
+.list {
   width: 90%;
   padding-left: 1rem;
 }
 
-.values-list li {
+.list li {
   list-style: circle;
   padding-bottom: 0.3rem;
 }
@@ -354,8 +362,45 @@ footer {
   }
 
   .about-wrapper {
-    grid-template-rows: 1fr 1fr;
-    height: 100%;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto auto auto;
+    min-height: 90vh;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+    padding: 0 0 0 2rem;
+    margin-bottom: 0;
+  }
+
+  .about-me,
+  .values,
+  .skills,
+  .interests {
+    width: 90%;
+  }
+
+  .about-me {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 1rem;
+  }
+
+  .values {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .skills {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .interests {
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 }
 
@@ -417,45 +462,6 @@ footer {
   .contact-links li {
     padding: 0 1rem 0 1rem;
   }
-
-  .about-wrapper {
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: auto auto auto;
-    min-height: 90vh;
-    margin-top: 0;
-  }
-
-  #about h2 {
-    font-size: 2rem;
-    padding: 0 0 0 2rem;
-  }
-
-  .about-me,
-  .values,
-  .skills,
-  .interests {
-    width: 90%;
-  }
-
-  .about-me {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-top: 1rem;
-  }
-
-  .values {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  .skills {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .interests {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
@@ -477,8 +483,22 @@ footer {
 
   .about-me,
   .values,
-  .skills {
+  .skills,
+  .interests {
     padding-bottom: 2rem;
     margin-left: 1rem;
+  }
+  #work {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
+  #project-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .box {
+    margin-right: 0;
   }
 }
