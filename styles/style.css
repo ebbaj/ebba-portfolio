@@ -477,6 +477,10 @@ footer {
   .box {
     margin-right: 0;
   }
+
+  #about h2 {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
