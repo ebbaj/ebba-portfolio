@@ -462,6 +462,20 @@ footer {
   .contact-links li {
     padding: 0 1rem 0 1rem;
   }
+
+  #work {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
+  #project-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .box {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -487,18 +501,5 @@ footer {
   .interests {
     padding-bottom: 2rem;
     margin-left: 1rem;
-  }
-  #work {
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-  }
-
-  #project-grid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .box {
-    margin-right: 0;
   }
 }
