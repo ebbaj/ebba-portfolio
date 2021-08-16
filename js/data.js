@@ -28,8 +28,7 @@ export const projects = [
       src: "./images/escape-from-hyper-island.png",
       alt: " ",
     },
-    description:
-      "Class game project. Level built in a-frame. Work in progress.",
+    description: "Class game project. Level built in A-frame.",
     link: "Go to page",
     url: "https://ebbaj.github.io/a-frame-foggy-forest/",
   },
