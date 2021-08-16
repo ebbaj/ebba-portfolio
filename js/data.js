@@ -35,17 +35,6 @@ export const projects = [
   },
   {
     id: 4,
-    name: "Settr",
-    image: {
-      src: "./images/settr.png",
-      alt: "Settr logo",
-    },
-    description: "Hyper Island student project in collaboration with Settr.",
-    link: "Go to page",
-    url: "https://ebbaj.github.io/Settr/",
-  },
-  {
-    id: 5,
     name: "The Perfect Night",
     image: {
       src: "./images/the-perfect-night.png",
@@ -56,7 +45,7 @@ export const projects = [
     url: "https://augustthorell.github.io/The-Perfect-Night/",
   },
   {
-    id: 6,
+    id: 5,
     name: "Ricola Footsteps",
     image: {
       src: "./images/ricola2.png",
@@ -66,6 +55,17 @@ export const projects = [
       "Student collaboration between Hyper Island FED/UX and Ricola.",
     link: "Go to page",
     url: "https://github.com/karolinfrennert/code-and-collaborate",
+  },
+  {
+    id: 6,
+    name: "Settr",
+    image: {
+      src: "./images/settr.png",
+      alt: "Settr logo",
+    },
+    description: "Hyper Island group project in collaboration with Settr.",
+    link: "Go to page",
+    url: "https://github.com/ebbaj/Settr",
   },
   {
     id: 7,
